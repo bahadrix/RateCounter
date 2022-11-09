@@ -6,8 +6,9 @@ Runs synchronously and works seamlessly with main thread without blocking.
 ## Usage
 
 ```go
+import "github.com/bahadrix/RateCounter"
 
-counter, _ := NewRateCounter(5 * time.Second, time.Second)
+counter, _ := RateCounter.NewCounter(5 * time.Second, time.Second)
 
 const hitPerSecond = 5
 

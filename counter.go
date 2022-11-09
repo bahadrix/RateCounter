@@ -19,7 +19,7 @@ type Counter struct {
 	windowStart int64
 }
 
-func NewRateCounter(window time.Duration, bucketSize time.Duration) (rc *Counter, err error) {
+func NewCounter(window time.Duration, bucketSize time.Duration) (rc *Counter, err error) {
 
 	if bucketSize > window {
 		err = errors.New("bucket size must be smaller than window")

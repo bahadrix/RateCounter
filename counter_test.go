@@ -21,7 +21,7 @@ func TestRateCounter_Basic(t *testing.T) {
 
 	for i, c := range cases {
 		t.Logf("Runing case %d/%d", i+1, len(cases))
-		counter, err := NewRateCounter(c.window, c.tickLength)
+		counter, err := NewCounter(c.window, c.tickLength)
 
 		assert.Nil(t, err)
 
@@ -54,7 +54,7 @@ func TestRateCounter_DelayArray(t *testing.T) {
 
 	for i, c := range cases {
 		t.Logf("Runing case %d/%d", i+1, len(cases))
-		counter, err := NewRateCounter(c.window, c.tickLength)
+		counter, err := NewCounter(c.window, c.tickLength)
 
 		assert.Nil(t, err)
 
