@@ -22,7 +22,7 @@ type Counter struct {
 func NewCounter(window time.Duration, bucketSize time.Duration) (rc *Counter, err error) {
 
 	if bucketSize > window {
-		err = errors.New("bucket size must be smaller than window")
+		err = errors.New("bucket size must be smaller than window size")
 		return
 	}
 	rc = &Counter{
