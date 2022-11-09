@@ -1,4 +1,4 @@
-package counter
+package RateCounter
 
 import (
 	"github.com/stretchr/testify/assert"
