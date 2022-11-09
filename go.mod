@@ -1,4 +1,4 @@
-module RateCounter
+module github.com/bahadrix/RateCounter
 
 go 1.19
 
